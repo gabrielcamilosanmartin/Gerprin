@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="duosoft.gerprin.NuevoVehiculoActivity">
+
+    <item android:id="@+id/I_Menu_Panel_Mensaje"
+        android:title="@string/Mensajes"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_mensaje"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/I_Menu_Panel_Informacion"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_action_inf"
+        android:title="@string/Informacion"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/I_Menu_Panel_Exit"
+        android:title="@string/Salir"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_action_exit"
+        app:showAsAction="always"/>
+</menu>

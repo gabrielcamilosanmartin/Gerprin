@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="duosoft.gerprin.UserActivity">
+
+
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/SRL_User_Lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/RV_User_Lista"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:padding="16dp">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_anadir"
+            android:id="@+id/FAB_User_Añadir"
+            android:layout_alignBottom="@+id/SRL_User_Lista"
+            android:layout_alignRight="@+id/SRL_User_Lista"
+            android:layout_margin="24dp">
+        </android.support.design.widget.FloatingActionButton>
+    </RelativeLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
+

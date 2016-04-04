@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="duosoft.gerprin.VehiculoActivity">
+
+    <item android:id="@+id/I_Menu_Exit"
+        android:title="@string/Salir"
+        android:icon="@drawable/ic_action_exit"
+        app:showAsAction="always"/>
+
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanelActivity">
+
+    <include layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_margin"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Modo_Parking"
+            android:id="@+id/Switch_Panel_ModoParking"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="right"/>
+        <Button
+            android:layout_width="@dimen/boton_panel"
+            android:layout_height="wrap_content"
+            android:text="@string/Ver_posicion_en_el_mapa"
+            android:id="@+id/B_Panel_Mapa"
+            android:layout_marginTop="50dp"
+            />
+
+        <Button
+            android:layout_width="@dimen/boton_panel"
+            android:layout_height="wrap_content"
+            android:text="@string/Ver_rutas_realizadas"
+            android:id="@+id/B_Panel_Rutas"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="@dimen/boton_panel"
+            android:layout_height="wrap_content"
+            android:text="@string/Ver_conductores"
+            android:id="@+id/B_Panel_Conductores"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

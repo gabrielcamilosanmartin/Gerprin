@@ -1,6 +1,46 @@
 <resources>
+    <string name="senderid">660417978878</string>
     <string name="app_name">Gerprin</string>
+    <string name="title_activity_Panel">Panel</string>
+    <string name="title_activity_Vehiculo">Vehículos</string>
+    <string name="title_activity_Nuevo_Vehiculo">Agregar vehículo</string>
+    <string name="title_activity_posicion">Posición</string>
+    <string name="Email">Email</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Olvido_su_contraseña">¿Olvidó su contraseña?</string>
+    <string name="Debe_ingresar_un_email_valido">Debe ingresar un email válido</string>
+    <string name="Mensajes">Mensajes</string>
+    <string name="Salir">Salir</string>
+    <string name="Buscar">Buscar</string>
+    <string name="Agregar">Agregar</string>
+    <string name="Ingrese_patente">Ingrese patente</string>
+    <string name="Ingrese_marca">Ingrese marca</string>
+    <string name="Ingrese_modelo">Ingrese modelo</string>
+    <string name="Ingrese_año">Ingrese año</string>
+    <string name="Modo_Parking">Modo parking</string>
+    <string name="Ver_posicion_en_el_mapa">Ver posicion en el mapa</string>
+    <string name="Ver_rutas_realizadas">Ver rutas realizadas</string>
+    <string name="Ver_conductores">Ver conductores</string>
+    <string name="title_activity_ruta_detalle">Map</string>
+    <string name="Es_dueño">Es dueño</string>
+    <string name="Es_conductor">Es conductor</string>
+    <string name="Eres_dueño">Eres dueño</string>
+    <string name="Eres_conductor">Eres conductor</string>
+    <string name="Agregar_conductor">Agregar conductor</string>
+    <string name="Ingrese_email">Ingrese email</string>
+    <string name="Ingrese_nombre">Ingrese nombre</string>
+    <string name="Ingrese_apellido">Ingrese apellido</string>
+    <string name="Ingrese_contraseña">Ingrese contraseña</string>
+    <string name="Dueño_del_vehiculo">Dueño del vehiculo</string>
+    <string name="Repita_la_contraseña">Repita la contraseña</string>
+    <string name="Editar">Editar</string>
+    <string name="imei">imei:</string>
+    <string name="Ingrese_imei">imei</string>
+    <string name="Informacion">Información</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_User">Usuarios</string>
+    <string name="title_activity_ruta_Nuevo_Usuario">Agregar usuario</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+
 </resources>

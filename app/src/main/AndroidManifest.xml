@@ -1,21 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="duosoft.gerprin" >
+    package="duosoft.gerprin"
+    android:versionCode="2"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //permisos de GCM
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <permission
+        android:name="com.duosoft.gerprin.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.duosoft.gerprin.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_logo2"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".VehiculoActivity"
+            android:label="@string/title_activity_Vehiculo" />
+        <activity
+            android:name=".NuevoVehiculoActivity"
+            android:label="@string/title_activity_Nuevo_Vehiculo" />
+        <activity
+            android:name=".PanelActivity"
+            android:label="@string/title_activity_Panel" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".PosicionActivity"
+            android:label="@string/title_activity_posicion" />
+        <activity android:name=".RutaActivity" />
+        <activity
+            android:name=".RutaDetalleActivity"
+            android:label="@string/title_activity_ruta_detalle">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="duosoft.gerprin.RutaActivity" />
+        </activity>
+        <activity android:name=".UserActivity" android:label="@string/title_activity_User"/>
+        <activity android:name=".NuevoUserActivity" android:label="@string/title_activity_ruta_Nuevo_Usuario" />
+        <activity android:name=".LogoutActivity" />
+        <!-- RECEIVER -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <!-- LISTEBER -->
+        <service
+            android:name=".MiGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- INSTANCE ID LISTENER -->
+        <service
+            android:name=".MiInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".DetalleUserActivity" />
+        <activity android:name=".DetalleVehiculoActivity" />
+        <activity android:name=".EditarVehiculoActivity" />
+        <activity android:name=".EditarUserActivity" />
+        <activity android:name=".MensajeActivity" />
+        <activity android:name=".DetalleMensajeActivity"></activity>
     </application>
 
 </manifest>
